@@ -1,5 +1,7 @@
 import { ChartData, ChartOptions } from "chart.js";
 
+import { ChartColorList } from "../../utils/constants";
+
 export const ApkVersionData: ChartData<"bar"> = {
   labels: [
     "1.3.0",
@@ -20,13 +22,13 @@ export const ApkVersionData: ChartData<"bar"> = {
         "#ff6384",
         "#36a2eb",
         "#ff9f40",
-        "#ffcd56",
+        ChartColorList.darkBlueColor,
         "#4bc0c0",
         "#9966ff",
         "#c9cbcf",
-        "#ff6384",
+        ChartColorList.greenColor,
         "#36a2eb",
-        "#ffcd56",
+        ChartColorList.blueColor,
       ],
     },
   ],
@@ -80,7 +82,7 @@ export const BrandData: ChartData<"bar"> = {
   datasets: [
     {
       data: [79, 14, 11, 11, 55, 67, 8, 2, 17, 11, 3, 5, 3, 16, 3, 4],
-      backgroundColor: ["#4bc0c0", "#ff6384", "#36a2eb", "#ffcd56", "#9966ff"],
+      backgroundColor: [ChartColorList.greenColor, "#ff6384", "#36a2eb", "#ffcd56", ChartColorList.darkBlueColor],
     },
   ],
 };
