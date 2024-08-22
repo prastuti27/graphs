@@ -1,5 +1,5 @@
 import UserSignupsChart from "./components/UserSignupsChart";
-import Card from "./components/Cards";
+import Card from "./components/DashboardStats";
 import "./App.css";
 import DevicesTypeChart from "./components/DevicesTypeChart";
 import NumberOfUsers from "./components/NumberOfUsers";

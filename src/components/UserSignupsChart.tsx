@@ -1,49 +1,37 @@
-import { LuCalendarDays } from "react-icons/lu";
-import { Line } from "react-chartjs-2";
 import {
-  Chart as ChartJS,
   CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Tooltip,
+  Chart as ChartJS,
   Legend,
-} from "chart.js";
-import { userSignupsData, userSignupsOptions } from "./UserSignupsData";
-import { Typography } from "antd";
+  LinearScale,
+  LineElement,
+  PointElement,
+  Tooltip,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+
+import ChartTitle from './chart/ChartTitle';
+import { userSignupsData, userSignupsOptions } from './data/UserSignupsData';
 ChartJS.register(
   CategoryScale,
   LinearScale,
   PointElement,
   LineElement,
   Tooltip,
-  Legend
+  Legend,
 );
-
-const { Title } = Typography;
-const UserSignupsChart = () => {
+const UserSignUpChart = () => {
   return (
-    <div className="p-3">
-      <div className="w-full h-auto p-4 bg-white rounded-lg shadow-md">
-        <div className="flex justify-between items-center">
-          <Title level={5} style={{ color: "#585858", fontWeight: "600" }}>
-            No. of user signups
-          </Title>
-          <span className="flex items-center gap-1 text-sm text-gray-600">
-            <LuCalendarDays color="#FFA500" />
-            Today
-          </span>
-        </div>
-        <div className="w-full h-[50vh] sm:h-[75vh] mt-4">
-          <Line
-            data={userSignupsData}
-            options={userSignupsOptions}
-            className="w-full h-full"
-          />
-        </div>
-      </div>
+    <div className="w-full py-4 bg-white rounded-lg shadow-sm">
+    <ChartTitle title="No. of user signups" />
+    <div className="w-full mt-4 mb-7 h-64 sm:h-80 md:h-96 ">
+      <Line
+        data={userSignupsData}
+        options={userSignupsOptions}
+        className="w-full"
+      />
     </div>
+  </div>
   );
 };
 
-export default UserSignupsChart;
+export default UserSignUpChart;
