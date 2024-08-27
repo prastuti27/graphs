@@ -1,13 +1,13 @@
-import BarChart from './chart/BarChart';
+import BarChart from "./chart/BarChart";
 import {
   ApkVersionData,
   BrandData,
   chartOptions1,
   chartOptions2,
-} from './data/RegisteredDeviceData';
+} from "./data/RegisteredDeviceData";
 const RegisteredDevices = () => {
   return (
-    <div className="flex w-full gap-4 flex-col lg:flex-row max-w-screen">
+    <div className="flex w-full gap-4 flex-col  lg:flex-row max-w-screen">
       <BarChart
         data={ApkVersionData}
         options={chartOptions1}

@@ -1,32 +1,30 @@
+import { ChartColorList } from "../../utils/constants";
 export const userSignupsData = {
   labels: [
-    "Jul 04",
-    "Jul 06",
-    "Jul 08",
-    "Jul 10",
-    "Jul 12",
-    "Jul 14",
-    "Jul 16",
-    "Jul 18",
-    "Jul 20",
-    "Jul 22",
-    "Jul 24",
-    "Jul 26",
-    "Jul 28",
-    "Jul 30",
-    "Aug 01",
+    "Jan 1",
+    "Jan 3",
+    "Jan 5",
+    "Jan 7",
+    "Jan 9",
+    "Jan 11",
+    "Jan 13",
+    "Jan 15",
+    "Jan 17",
+    "Jan 19",
+    "Jan 21",
+    "Jan 23",
+    "Jan 25",
+    "Jan 27",
+    "Jan 29",
   ],
   datasets: [
     {
       label: "No. of user signups",
-      data: [
-        1, 0, 1, 1, 2, 2, 1, 4, 0, 1, 1, 0, 1, 1, 2, 1, 1, 0, 2, 1, 3, 0, 0, 1,
-        0, 2, 0, 3, 3, 0,
-      ],
+      data: [40, 55, 65, 25, 70, 35, 67, 24, 55, 25, 15, 30, 45, 50, 55, 45],
       fill: false,
-      borderColor: "orange",
+      borderColor: ChartColorList.greenColor,
       tension: 0.4,
-      pointRadius: 0,
+      pointRadius: 4,
     },
   ],
 };
@@ -38,22 +36,22 @@ export const userSignupsOptions = {
     legend: {
       display: false,
     },
+    datalabels: {
+      display: false, // Turn off data labels
+    },
   },
   scales: {
     x: {
       grid: {
         display: false,
       },
-      ticks: {
-        stepSize: 0.25,
-        maxRotation: 45,
-        minRotation: 45,
-      },
     },
     y: {
       ticks: {
-        stepSize: 1,
+        stepSize: 10,
       },
+      min: 0,
+      max: 70,
     },
   },
 };
