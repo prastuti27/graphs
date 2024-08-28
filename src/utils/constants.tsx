@@ -48,3 +48,9 @@ export const ChartColorList = {
   yellowColor: "#FFCE5C",
   darkBlueColor: "#1A63F4",
 };
+// types.ts
+export interface PieChartProps {
+  data: any; // Replace `any` with your data type
+  options: any; // Replace `any` with your options type
+  title: string; // Add title to the props
+}

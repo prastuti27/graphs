@@ -19,7 +19,7 @@ const DashboardStats = () => {
           >
             <div className="p-4 border rounded-tl-lg rounded-tr-lg rounded-bl-none rounded-br-none">
               <div className="flex flex-row gap-4 items-center mr-4">
-                <div className="text-3xl w-10 h-10 rounded-full border-2 bg-white flex items-center justify-center">
+                <div className="text-3xl w-10 h-10 rounded-full border-2  flex items-center justify-center">
                   {icon}
                 </div>
                 <div>

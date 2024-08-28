@@ -21,7 +21,7 @@ ChartJS.register(
 );
 const UserSignUpChart = () => {
   return (
-    <div className="w-full py-4 bg-white rounded-lg shadow-sm">
+    <div className="w-full py-4  rounded-lg shadow-sm">
     <ChartTitle title="No. of user signups" />
     <div className="w-full mt-4 mb-7 h-64 sm:h-80 md:h-96 ">
       <Line

@@ -1,15 +1,17 @@
 import { ChartData, ChartOptions } from "chart.js";
-export interface DonutChartProps {
-  data?: ChartData<"doughnut">;
-  options?: ChartOptions<"doughnut">;
-}
 
 export interface BarChartProps {
-  title?: string;
   data: ChartData<"bar">;
   options: ChartOptions<"bar">;
+  title: string;
 }
 
 export type TitleType = {
   title: string;
 };
+
+export interface PieChartProps {
+  data: ChartData<"pie">;
+  options: ChartOptions<"pie">;
+  title: string;
+}
